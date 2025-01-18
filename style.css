@@ -1,0 +1,115 @@
+@font-face {
+    font-family: 'Inter Thin';
+    src: url('./assets/fonts/Inter-VariableFont_slnt\,wght.ttf') format('truetype');
+}
+
+:root{
+    --bg-color: hsl(0, 0%, 8%);
+    --bg-second-color: hsl(0, 0%, 12%);
+    --bg-third-color: hsl(0, 0%, 20%);
+    --bg-fourth-color: hsl(75, 94%, 57%);
+    --font-color: hsl(0, 0%, 100%);
+    --font-second-color: hsl(0, 0%, 8%);
+    --font: 'Inter Thin', Arial, Helvetica, sans-serif;
+}
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: hsl(0, 0%, 100%);
+    font-size: 0.875rem;
+    font-family: var(--font);
+    min-height: 100vh;
+    padding: 1rem;
+    justify-content: center;
+    text-align: center;
+    gap: 1rem;
+}
+
+body, .card, .card-social-links, .card-text {
+    display: flex;
+    flex-direction: column;
+}
+
+body, .card, .card-text{
+    align-items: center;
+}
+
+main{
+    flex: 1;
+}
+
+/* CARD */
+
+.card {
+    background-color: var(--bg-second-color);
+    border-radius: .5rem;
+    width: 20rem;
+    max-width: 20rem;
+    padding: 1.9rem 2rem 1.9rem 2rem;
+    gap: 1.5rem;
+}
+
+.card-social-links {
+    justify-content: space-between;
+    align-items: stretch;
+    width: 100%;
+    gap: .8rem;
+}
+
+.card-text{
+    gap: .4rem;
+}
+
+/* SOCIAL BUTTONS */
+.social-btn {
+    background-color: var(--bg-third-color);
+    border-radius: .3rem;
+    border: none;
+    padding: .735rem;
+    cursor: pointer;
+    color: var(--font-color);
+    font-weight: 700;
+}
+
+.social-btn:hover{
+    background-color: var(--bg-fourth-color);
+    color: var(--font-second-color);
+}
+
+/* IMAGES */
+
+.avatar-profile {
+    width: 4.5rem;
+    border-radius: 5rem;
+}
+
+/* TEXTS */
+
+.highlight {
+    color: var(--bg-fourth-color);
+    font-weight: 600;
+    font-size: 12px;
+}
+
+h1{
+    font-weight: 600;
+}
+
+.text{
+    margin-top: .9rem;
+    font-size: 12px;
+}
+
+footer{
+    color:var(--bg-third-color);
+}
+
+footer a{
+    text-decoration: none;
+    color: var(--bg-fourth-color);
+}
